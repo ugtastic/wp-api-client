@@ -1,30 +1,30 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'wp/api/client/version'
+require 'wp/api/version'
 
-Gem::Specification.new do |spec|
-  spec.name          = 'wp-api-client'
-  spec.version       = WP::API::Client::VERSION
-  spec.authors       = ['Mike Hall']
-  spec.email         = ['mike@ugtastic.com']
-  spec.description   = %q{Client for the WP API}
-  spec.summary       = %q{A Ruby client for the WP API that's under-development by Ryan McCue (@rmccue).}
-  spec.homepage      = "http://github.com/ugtastic/wp-api-client"
-  spec.license       = "MIT"
+Gem::Specification.new do |s|
+  s.name          = 'wp-api-client'
+  s.version       = WP::API::VERSION
+  s.authors       = ['Mike Hall']
+  s.email         = ['mike@ugtastic.com']
+  s.description   = %q{Client for the WP API}
+  s.summary       = %q{A Ruby client for the WP API that's under-development by Ryan McCue (@rmccue).}
+  s.homepage      = 'http://github.com/ugtastic/wp-api-client'
+  s.license       = 'MIT'
 
-  spec.files         = `git ls-files`.split($/)
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
-  spec.require_paths = ["lib"]
+  s.files         = `git ls-files`.split($/)
+  s.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  s.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  s.require_paths = ["lib"]
 
-  spec.add_development_dependency 'bundler', '~> 1.3'
-  spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'simplecov'
-  spec.add_development_dependency 'guard-rspec'
-  spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'travis'
+  s.add_development_dependency 'bundler', '~> 1.3'
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'simplecov'
+  s.add_development_dependency 'guard-rspec'
+  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'travis'
 
-  spec.add_dependency 'httparty'
+  s.add_dependency 'httparty'
 end
