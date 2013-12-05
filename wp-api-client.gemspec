@@ -5,7 +5,7 @@ require 'wp/api/client/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'wp-api-client'
-  spec.version       = Wp::Api::Client::VERSION
+  spec.version       = WP::API::Client::VERSION
   spec.authors       = ['Mike Hall']
   spec.email         = ['mike@ugtastic.com']
   spec.description   = %q{Client for the WP API}

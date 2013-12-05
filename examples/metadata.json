@@ -1,0 +1,233 @@
+{
+    "URL": "https://www.ugtastic.com",
+    "description": "Interviews with people who make technical communities interesting.",
+    "meta": {
+        "links": {
+            "help": "https://github.com/rmccue/WP-API",
+            "profile": "https://raw.github.com/rmccue/WP-API/master/docs/schema.json"
+        }
+    },
+    "name": "UGtastic",
+    "routes": {
+        "/": {
+            "meta": {
+                "self": "https://www.ugtastic.com/wp-json.php/"
+            },
+            "supports": [
+                "HEAD",
+                "GET"
+            ]
+        },
+        "/media": {
+            "meta": {
+                "self": "https://www.ugtastic.com/wp-json.php/media"
+            },
+            "supports": [
+                "HEAD",
+                "GET",
+                "POST"
+            ]
+        },
+        "/media/<id>": {
+            "supports": [
+                "HEAD",
+                "GET",
+                "POST",
+                "PUT",
+                "PATCH",
+                "DELETE"
+            ]
+        },
+        "/pages": {
+            "meta": {
+                "self": "https://www.ugtastic.com/wp-json.php/pages"
+            },
+            "supports": [
+                "HEAD",
+                "GET",
+                "POST"
+            ]
+        },
+        "/pages/<id>": {
+            "supports": [
+                "HEAD",
+                "GET",
+                "POST",
+                "PUT",
+                "PATCH",
+                "DELETE"
+            ]
+        },
+        "/pages/<id>/comments": {
+            "accepts_json": true,
+            "supports": [
+                "HEAD",
+                "GET",
+                "POST"
+            ]
+        },
+        "/pages/<id>/comments/<comment>": {
+            "accepts_json": true,
+            "supports": [
+                "HEAD",
+                "GET",
+                "POST",
+                "PUT",
+                "PATCH",
+                "DELETE"
+            ]
+        },
+        "/pages/<id>/revisions": {
+            "supports": [
+                "HEAD",
+                "GET"
+            ]
+        },
+        "/pages/<path>": {
+            "accepts_json": true,
+            "supports": [
+                "HEAD",
+                "GET",
+                "POST",
+                "PUT",
+                "PATCH",
+                "DELETE"
+            ]
+        },
+        "/posts": {
+            "accepts_json": true,
+            "meta": {
+                "self": "https://www.ugtastic.com/wp-json.php/posts"
+            },
+            "supports": [
+                "HEAD",
+                "GET",
+                "POST"
+            ]
+        },
+        "/posts/<id>": {
+            "accepts_json": true,
+            "supports": [
+                "HEAD",
+                "GET",
+                "POST",
+                "PUT",
+                "PATCH",
+                "DELETE"
+            ]
+        },
+        "/posts/<id>/comments": {
+            "accepts_json": true,
+            "supports": [
+                "HEAD",
+                "GET",
+                "POST"
+            ]
+        },
+        "/posts/<id>/comments/<comment>": {
+            "accepts_json": true,
+            "supports": [
+                "HEAD",
+                "GET",
+                "POST",
+                "PUT",
+                "PATCH",
+                "DELETE"
+            ]
+        },
+        "/posts/<id>/revisions": {
+            "supports": [
+                "HEAD",
+                "GET"
+            ]
+        },
+        "/posts/statuses": {
+            "meta": {
+                "self": "https://www.ugtastic.com/wp-json.php/posts/statuses"
+            },
+            "supports": [
+                "HEAD",
+                "GET"
+            ]
+        },
+        "/posts/types": {
+            "meta": {
+                "self": "https://www.ugtastic.com/wp-json.php/posts/types"
+            },
+            "supports": [
+                "HEAD",
+                "GET"
+            ]
+        },
+        "/posts/types/<type>": {
+            "supports": [
+                "HEAD",
+                "GET"
+            ]
+        },
+        "/posts/types/<type>/taxonomies": {
+            "supports": [
+                "HEAD",
+                "GET"
+            ]
+        },
+        "/posts/types/<type>/taxonomies/<taxonomy>": {
+            "supports": [
+                "HEAD",
+                "GET"
+            ]
+        },
+        "/posts/types/<type>/taxonomies/<taxonomy>/terms": {
+            "accepts_json": true,
+            "supports": [
+                "HEAD",
+                "GET",
+                "POST"
+            ]
+        },
+        "/posts/types/<type>/taxonomies/<taxonomy>/terms/<term>": {
+            "accepts_json": true,
+            "supports": [
+                "HEAD",
+                "GET",
+                "POST",
+                "PUT",
+                "PATCH",
+                "DELETE"
+            ]
+        },
+        "/users": {
+            "accepts_json": true,
+            "meta": {
+                "self": "https://www.ugtastic.com/wp-json.php/users"
+            },
+            "supports": [
+                "HEAD",
+                "GET",
+                "POST"
+            ]
+        },
+        "/users/<user>": {
+            "accepts_json": true,
+            "supports": [
+                "HEAD",
+                "GET",
+                "POST"
+            ]
+        },
+        "/users/me": {
+            "meta": {
+                "self": "https://www.ugtastic.com/wp-json.php/users/me"
+            },
+            "supports": [
+                "HEAD",
+                "GET",
+                "POST",
+                "PUT",
+                "PATCH",
+                "DELETE"
+            ]
+        }
+    }
+}
+

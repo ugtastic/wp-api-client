@@ -1,7 +1,7 @@
 require 'wp/api/client/version'
 
-module Wp
-  module Api
+module WP
+  module API
     module Client
     end
   end
