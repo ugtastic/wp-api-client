@@ -32,4 +32,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'httparty'
   s.add_dependency 'oj'
+  s.add_dependency 'hashie'
 end
