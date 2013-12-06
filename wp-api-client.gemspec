@@ -14,17 +14,22 @@ Gem::Specification.new do |s|
   s.license       = 'MIT'
 
   s.files         = `git ls-files`.split($/)
-  s.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  s.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  s.test_files    = s.files.grep(%r{^(test|spec|features)/})
   s.require_paths = ["lib"]
 
   s.add_development_dependency 'bundler', '~> 1.3'
+  s.add_development_dependency 'webmock', '<= 1.15'
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'simplecov'
   s.add_development_dependency 'guard-rspec'
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'travis'
+  s.add_development_dependency 'vcr'
+  s.add_development_dependency 'webmock'
+  s.add_development_dependency 'awesome_print'
 
   s.add_dependency 'httparty'
+  s.add_dependency 'oj'
 end
